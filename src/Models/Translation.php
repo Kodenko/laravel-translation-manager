@@ -19,6 +19,8 @@ class Translation extends Model{
 
     const STATUS_SAVED = 0;
     const STATUS_CHANGED = 1;
+
+    protected $connection = 'mysql_internal_translator';
     
     protected $table = 'ltm_translations';
     
